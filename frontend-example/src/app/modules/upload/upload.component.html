@@ -1,0 +1,16 @@
+<div id="page">
+    <label id="upload-field">
+        <h2>Click Here to Select a File to Upload</h2>
+
+        <input type="file" (change)="upload($event)" #inputUpload>
+
+        <ng-container *ngIf="fileName">
+            <section>
+                <p>Name: {{ fileName }}</p>
+                <p>Type: {{ fileType }}</p>
+                <p>Size: {{ fileSize }} Bytes</p>
+                <p>Chunk Range: {{ chunks }}</p>
+            </section>
+        </ng-container>
+    </label>
+</div>

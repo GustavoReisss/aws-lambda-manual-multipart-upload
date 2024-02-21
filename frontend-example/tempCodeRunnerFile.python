@@ -1,0 +1,12 @@
+key = "1-te-ste.xlsx"
+
+object_path = "/".join(key.split("/")[:-1])
+object_name = "-".join(key.split("/")[-1].split('-')[1:])
+
+
+print(object_path == '')
+print(object_name)
+
+chunks = 5
+for chunk in range(chunks):
+    print(chunk)
